@@ -257,14 +257,39 @@
         <!--cart-->
         <scene sceneID="3Td-np-vrP">
             <objects>
-                <viewController id="SMg-r2-jdY" sceneMemberID="viewController">
+                <viewController id="SMg-r2-jdY" customClass="CartViewController" customModule="GoldenLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zb4-3q-IFs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4IY-bn-osj">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ijV-ee-jHO">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ijV-ee-jHO" id="Glz-gp-gAK">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jwY-lk-h6M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jwY-lk-h6M" firstAttribute="trailing" secondItem="4IY-bn-osj" secondAttribute="trailing" id="CEs-YP-hml"/>
+                            <constraint firstItem="jwY-lk-h6M" firstAttribute="bottom" secondItem="4IY-bn-osj" secondAttribute="bottom" id="PnO-5B-S77"/>
+                            <constraint firstItem="4IY-bn-osj" firstAttribute="leading" secondItem="jwY-lk-h6M" secondAttribute="leading" id="XA8-Wv-3kt"/>
+                            <constraint firstItem="4IY-bn-osj" firstAttribute="top" secondItem="jwY-lk-h6M" secondAttribute="top" id="eCi-nZ-51P"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="cart" id="rzE-hw-deM"/>
+                    <tabBarItem key="tabBarItem" title="cart" image="cart.fill" catalog="system" id="rzE-hw-deM"/>
+                    <connections>
+                        <outlet property="tableView" destination="4IY-bn-osj" id="6PQ-Tx-ZDs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgd-09-0pP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,6 +350,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
