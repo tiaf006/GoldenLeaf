@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F64C56A297469D1001DED0A /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */; };
+		4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */; };
 		B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1429743CB800B9F45C /* AppDelegate.swift */; };
 		B1729C1729743CB800B9F45C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1729C1629743CB800B9F45C /* art.scnassets */; };
 		B1729C1929743CB800B9F45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1829743CB800B9F45C /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
 		B1729C1129743CB800B9F45C /* GoldenLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1729C1429743CB800B9F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1729C1629743CB800B9F45C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 				B1729C1829743CB800B9F45C /* ViewController.swift */,
 				B1729C2D29743F6A00B9F45C /* OnBoardingViewController.swift */,
 				B1729C3329743FD400B9F45C /* PlantsCollictionViewController.swift */,
+				4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */,
+				4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */,
 				B1729C3529743FE800B9F45C /* CartViewController.swift */,
 				B1729C372974400E00B9F45C /* PrevOrdersTableViewController.swift */,
 				B1729C392974402A00B9F45C /* PaymentViewController.swift */,
@@ -312,6 +318,8 @@
 				B1729C2E29743F6A00B9F45C /* OnBoardingViewController.swift in Sources */,
 				B1729C1929743CB800B9F45C /* ViewController.swift in Sources */,
 				B1729C3A2974402A00B9F45C /* PaymentViewController.swift in Sources */,
+				4F64C56A297469D1001DED0A /* PlantCollectionViewCell.swift in Sources */,
+				4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */,
 				B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
