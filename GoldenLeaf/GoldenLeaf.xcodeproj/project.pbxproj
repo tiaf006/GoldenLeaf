@@ -11,6 +11,7 @@
 		0B9109362974771B00430340 /* SnapshotProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9109352974771B00430340 /* SnapshotProductCell.swift */; };
 		4F64C56A297469D1001DED0A /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */; };
 		4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */; };
+		87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D91A9E297483320075C184 /* ListOrdersViewController.swift */; };
 		B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1429743CB800B9F45C /* AppDelegate.swift */; };
 		B1729C1729743CB800B9F45C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1729C1629743CB800B9F45C /* art.scnassets */; };
 		B1729C1929743CB800B9F45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1829743CB800B9F45C /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		0B9109352974771B00430340 /* SnapshotProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotProductCell.swift; sourceTree = "<group>"; };
 		4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
+		87D91A9E297483320075C184 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		B1729C1129743CB800B9F45C /* GoldenLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1729C1429743CB800B9F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1729C1629743CB800B9F45C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87D91A9D2974830A0075C184 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				87D91A9E297483320075C184 /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
+			sourceTree = "<group>";
+		};
 		B1729C0829743CB700B9F45C = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		B1729C3F2974409B00B9F45C /* Login-Register */ = {
 			isa = PBXGroup;
 			children = (
+				87D91A9D2974830A0075C184 /* ListOrders */,
 				B1729C2F29743F7A00B9F45C /* LogInViewController.swift */,
 				B1729C3129743F8900B9F45C /* RegisterViewController.swift */,
 			);
@@ -327,6 +338,7 @@
 				B1729C1929743CB800B9F45C /* ViewController.swift in Sources */,
 				B1729C3A2974402A00B9F45C /* PaymentViewController.swift in Sources */,
 				4F64C56A297469D1001DED0A /* PlantCollectionViewCell.swift in Sources */,
+				87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */,
 				4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */,
 				B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */,
 			);
