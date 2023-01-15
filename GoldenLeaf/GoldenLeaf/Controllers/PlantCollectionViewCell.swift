@@ -13,4 +13,5 @@ class PlantCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var PlantName: UILabel!
     
+    
 }

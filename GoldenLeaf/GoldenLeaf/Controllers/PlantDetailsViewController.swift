@@ -11,7 +11,6 @@ class PlantDetailsViewController: UIViewController {
 
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
