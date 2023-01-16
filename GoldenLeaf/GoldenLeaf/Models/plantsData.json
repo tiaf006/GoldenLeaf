@@ -1,0 +1,785 @@
+[
+   {
+      "Latin name":"Nolina recurvata",
+      "Style":null,
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":1.52,
+         "cm":152
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":1.52,
+         "cm":152
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5671.jpg",
+      "Perfume":null,
+      "Growth":"Slow",
+      "Width potential":{
+         "m":3.66,
+         "cm":366
+      },
+      "Common name (fr.)":"Pied d'lphant",
+      "Height potential":{
+         "m":4.57,
+         "cm":457
+      },
+      "Temperature max":{
+         "F":89.6,
+         "C":32
+      },
+      "Blooming season":"Rarely",
+      "Color of leaf":[
+         "Medium green"
+      ],
+      "Watering":"Water when soil is half dry & Can dry between watering",
+      "Color of blooms":null,
+      "Common name":[
+         "Elephant foot",
+         "Pony tail"
+      ]
+   },
+   {
+      "Latin name":"Schefflera arboricola",
+      "Style":"Standard",
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":1.22,
+         "cm":122
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5745.jpg",
+      "Perfume":"Camphror, comes from the Leafs",
+      "Growth":"Regular",
+      "Width potential":{
+         "m":4.57,
+         "cm":457
+      },
+      "Common name (fr.)":"Plante parasol",
+      "Height potential":{
+         "m":4.57,
+         "cm":457
+      },
+      "Temperature max":{
+         "F":86,
+         "C":30
+      },
+      "Blooming season":"Summer / Fall",
+      "Color of leaf":[
+         "Dark green"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":"Medium green",
+      "Common name":[
+         "Hawaiian elf",
+         "Parasol plant"
+      ]
+   },
+   {
+      "Latin name":"Dieffenbachia maculata 'Carina'",
+      "Style":"Bush",
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.3,
+         "cm":30
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.3,
+         "cm":30
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5548.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":0.91,
+         "cm":91
+      },
+      "Common name (fr.)":null,
+      "Height potential":{
+         "m":0.91,
+         "cm":91
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":"Winter",
+      "Color of leaf":[
+         "Medium green",
+         "Cream"
+      ],
+      "Watering":"Keep moist between watering & Can dry between watering",
+      "Color of blooms":"Cream",
+      "Common name":[
+         "Dumcane"
+      ]
+   },
+   {
+      "Latin name":"Euphorbia ammack",
+      "Style":null,
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":1.52,
+         "cm":152
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.46,
+         "cm":46
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5598.jpg",
+      "Perfume":null,
+      "Growth":"Slow",
+      "Width potential":null,
+      "Common name (fr.)":"Euphorbia panach",
+      "Height potential":null,
+      "Description":null,
+      "Temperature max":{
+         "F":95,
+         "C":35
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Cream yellow",
+         "Light green"
+      ],
+      "Watering":"Must dry between watering & Water only when dry",
+      "Color of blooms":null,
+      "Common name":[
+         "Variegated Euphorbia"
+      ]
+   },
+   {
+      "Latin name":"Hibiscus rosa-sinensis",
+      "Style":"Bush",
+      "Bearing":"Arborescent",
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.71,
+         "cm":71
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5644.jpg",
+      "Perfume":null,
+      "Growth":"Fast",
+      "Width potential":{
+         "m":1.83,
+         "cm":183
+      },
+      "Common name (fr.)":"Hibiscus chinois",
+      "Height potential":{
+         "m":3.05,
+         "cm":305
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":"Spring / Summer",
+      "Color of leaf":[
+         "Dark green"
+      ],
+      "Watering":"Keep moist between watering & Must not dry between watering",
+      "Color of blooms":"Red",
+      "Common name":[
+         "Chinese hibiscus"
+      ]
+   },
+   {
+      "Latin name":"Nephrolepis exaltata var.",
+      "Style":null,
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.41,
+         "cm":41
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.46,
+         "cm":46
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5667.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":1.22,
+         "cm":122
+      },
+      "Common name (fr.)":"Fougère de Boston",
+      "Height potential":{
+         "m":0.61,
+         "cm":61
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Light green"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":null,
+      "Common name":[
+         "Boston fern",
+         "Sword fern"
+      ]
+   },
+   {
+      "Latin name":"Pteris cretica 'Albo-lineata'",
+      "Style":null,
+      "Light tolered":null,
+      "Height at purchase":{
+         "m":0.2,
+         "cm":20
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.25,
+         "cm":25
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5718.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":0.3,
+         "cm":30
+      },
+      "Common name (fr.)":"Pteris Ruban d'argent",
+      "Height potential":{
+         "m":0.38,
+         "cm":38
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Medium green",
+         "Silver"
+      ],
+      "Watering":"Keep moist between watering & Must not dry between watering",
+      "Color of blooms":null,
+      "Common name":[
+         "Silver Ribbon Fern"
+      ]
+   },
+   {
+      "Latin name":"Strelitzia nicolai",
+      "Style":null,
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":0.41,
+         "cm":41
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.3,
+         "cm":30
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5767.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":9.14,
+         "cm":914
+      },
+      "Common name (fr.)":"Oiseaux du paradis",
+      "Height potential":{
+         "m":12.19,
+         "cm":1219
+      },
+      "Temperature max":{
+         "F":86,
+         "C":30
+      },
+      "Blooming season":"Rarely",
+      "Color of leaf":[
+         "Medium green"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":"Cream",
+      "Common name":[
+         "White bird of paradise"
+      ]
+   },
+   {
+      "Latin name":"Aglaonema 'Emerald Star'",
+      "Style":null,
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5460.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":1.07,
+         "cm":107
+      },
+      "Common name (fr.)":"Aglaonema",
+      "Height potential":{
+         "m":1.07,
+         "cm":107
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":"Seasonal",
+      "Color of leaf":[
+         "Dark green",
+         "Yellow"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":"Light green",
+      "Common name":[
+         "Chinese Evergreen"
+      ]
+   },
+   {
+      "Latin name":"Schefflera arboricola 'Gold Cappela'",
+      "Style":"Standard",
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":1.68,
+         "cm":168
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":1.22,
+         "cm":122
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5750.jpg",
+      "Perfume":"Camphror, comes from the Leafs",
+      "Growth":"Regular",
+      "Width potential":{
+         "m":4.57,
+         "cm":457
+      },
+      "Common name (fr.)":"Plante parasol",
+      "Height potential":{
+         "m":4.57,
+         "cm":457
+      },
+      "Temperature max":{
+         "F":86,
+         "C":30
+      },
+      "Blooming season":"Summer / Fall",
+      "Color of leaf":[
+         "Dark green",
+         "Yellow"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":"Medium green",
+      "Common name":[
+         "Hawaiian elf",
+         "Parasol plant"
+      ]
+   },
+   {
+      "Latin name":"Codiaeum petra",
+      "Style":"Bush",
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5534.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":1.52,
+         "cm":152
+      },
+      "Common name (fr.)":"Croton",
+      "Height potential":{
+         "m":1.83,
+         "cm":183
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Yellow",
+         "Red"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":null,
+      "Common name":[
+         "Croton"
+      ]
+   },
+   {
+      "Latin name":"Neoregelia 'Victoria Pink'",
+      "Style":null,
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.15,
+         "cm":15
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.3,
+         "cm":30
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5665.jpg",
+      "Perfume":null,
+      "Growth":"Slow",
+      "Width potential":null,
+      "Common name (fr.)":null,
+      "Height potential":null,
+      "Temperature max":{
+         "F":86,
+         "C":30
+      },
+      "Blooming season":"Winter / Spring",
+      "Color of leaf":[
+         "Dark green"
+      ],
+      "Watering":"Change water regularly in the cup & Water when soil is half dry",
+      "Color of blooms":"Red",
+      "Common name":null
+   },
+   {
+      "Latin name":"Cycas revoluta",
+      "Style":null,
+      "Light tolered":null,
+      "Height at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":1.07,
+         "cm":107
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5540.jpg",
+      "Perfume":null,
+      "Growth":"Very slow",
+      "Width potential":{
+         "m":1.52,
+         "cm":152
+      },
+      "Common name (fr.)":"Sagoutier, Cycas du Japon",
+      "Height potential":{
+         "m":1.83,
+         "cm":183
+      },
+      "Temperature max":{
+         "F":86,
+         "C":30
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Dark green"
+      ],
+      "Watering":"Water when soil is half dry & Can dry between watering",
+      "Color of blooms":null,
+      "Common name":[
+         "Sago palm",
+         "King sago"
+      ]
+   },
+   {
+      "Latin name":"Sansevieria trifasciata Laurentii",
+      "Style":null,
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.61,
+         "cm":61
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.2,
+         "cm":20
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5733.jpg",
+      "Perfume":"Putrid, comes from the Flowers",
+      "Growth":"Slow",
+      "Width potential":null,
+      "Common name (fr.)":"Langue de belle mère",
+      "Height potential":{
+         "m":1.22,
+         "cm":122
+      },
+      "Temperature max":{
+         "F":95,
+         "C":35
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Dark green",
+         "Yellow"
+      ],
+      "Watering":"Water when soil is half dry & Can dry between watering",
+      "Color of blooms":"Light green",
+      "Common name":[
+         "Snake plant"
+      ]
+   },
+   {
+      "Latin name":"Crassula argentea",
+      "Style":null,
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":0.25,
+         "cm":25
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.25,
+         "cm":25
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5535.jpg",
+      "Perfume":null,
+      "Growth":"Slow",
+      "Width potential":{
+         "m":1.52,
+         "cm":152
+      },
+      "Common name (fr.)":"Jade",
+      "Height potential":{
+         "m":1.83,
+         "cm":183
+      },
+      "Temperature max":{
+         "F":95,
+         "C":35
+      },
+      "Blooming season":"Fall",
+      "Color of leaf":[
+         "Medium green",
+         "Red"
+      ],
+      "Watering":"Must dry between watering & Water only when dry",
+      "Color of blooms":"White",
+      "Common name":[
+         "Jade Plant"
+      ]
+   },
+   {
+      "Latin name":"Phoenix roebellinii",
+      "Style":null,
+      "Light tolered":null,
+      "Height at purchase":{
+         "m":1.83,
+         "cm":183
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":1.83,
+         "cm":183
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5697.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":2.44,
+         "cm":244
+      },
+      "Common name (fr.)":"Palmier datier",
+      "Height potential":{
+         "m":5.49,
+         "cm":549
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Dark green",
+         "Silver"
+      ],
+      "Watering":"Keep moist between watering & Must not dry between watering",
+      "Color of blooms":null,
+      "Common name":[
+         "Pignee Date palm"
+      ]
+   },
+   {
+      "Latin name":"Agave striata 'Nana'",
+      "Style":null,
+      "Light tolered":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Height at purchase":{
+         "m":0.46,
+         "cm":46
+      },
+      "Light ideal":"Full sun (+21,500 lux /+2000 fc )",
+      "Width at purchase":{
+         "m":0.46,
+         "cm":46
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5445.jpg",
+      "Perfume":null,
+      "Growth":"Slow",
+      "Width potential":{
+         "m":1.02,
+         "cm":102
+      },
+      "Common name (fr.)":"Agave de Liliput",
+      "Height potential":{
+         "m":0.91,
+         "cm":91
+      },
+      "Temperature max":{
+         "F":95,
+         "C":35
+      },
+      "Blooming season":"Rarely",
+      "Color of leaf":[
+         "Dark green"
+      ],
+      "Watering":"Must dry between watering & Water only when dry",
+      "Color of blooms":null,
+      "Common name":[
+         "Lilliput Agave",
+         "Century plant"
+      ]
+   },
+   {
+      "Latin name":"Aglaonema 'Jewel of India'",
+      "Style":null,
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.76,
+         "cm":76
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.61,
+         "cm":61
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5465.jpg",
+      "Perfume":null,
+      "Growth":"Regular",
+      "Width potential":{
+         "m":0.91,
+         "cm":91
+      },
+      "Common name (fr.)":"Aglaonema",
+      "Height potential":{
+         "m":0.91,
+         "cm":91
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":"Seasonal",
+      "Color of leaf":[
+         "Grey",
+         "Dark green"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":"Light green",
+      "Common name":[
+         "Chinese Evergreen"
+      ]
+   },
+   {
+      "Latin name":"Sansevieria trifasciata",
+      "Style":null,
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.3,
+         "cm":30
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.15,
+         "cm":15
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5727.jpg",
+      "Perfume":"Putrid, comes from the Flowers",
+      "Growth":"Slow",
+      "Width potential":null,
+      "Common name (fr.)":"Langue de belle mère",
+      "Height potential":{
+         "m":1.22,
+         "cm":122
+      },
+      "Temperature max":{
+         "F":95,
+         "C":35
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Dark green",
+         "Light green"
+      ],
+      "Watering":"Water when soil is half dry & Can dry between watering",
+      "Color of blooms":"Light green",
+      "Common name":[
+         "Snake plant"
+      ]
+   },
+   {
+      "Latin name":"Chamaedorea elegans",
+      "Style":null,
+      "Bearing":"Clump",
+      "Light tolered":"Diffuse light ( Less than 5,300 lux / 500 fc)",
+      "Height at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "Light ideal":"Strong light ( 21,500 to 3,200 lux/2000 to 300 fc)",
+      "Width at purchase":{
+         "m":0.91,
+         "cm":91
+      },
+      "img":"http://www.tropicopia.com/house-plant/thumbnails/5520.jpg",
+      "Perfume":null,
+      "Growth":"Slow",
+      "Width potential":{
+         "m":1.02,
+         "cm":102
+      },
+      "Common name (fr.)":"Palmier nain, Palmier Bella, Palmier Neanthebella",
+      "Height potential":{
+         "m":1.02,
+         "cm":102
+      },
+      "Temperature max":{
+         "F":82.4,
+         "C":28
+      },
+      "Blooming season":null,
+      "Color of leaf":[
+         "Medium green"
+      ],
+      "Watering":"Keep moist between watering & Water when soil is half dry",
+      "Color of blooms":null,
+      "Common name":[
+         "Bella palm",
+         "Neanthebella palm",
+         "Dwarf palm",
+         "Parlor palm"
+      ]
+   }
+]

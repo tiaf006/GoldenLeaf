@@ -55,6 +55,7 @@
 		B1729C76297444F800B9F45C /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B1729C75297444F800B9F45C /* FirebaseRemoteConfigSwift */; };
 		B1729C78297444F800B9F45C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B1729C77297444F800B9F45C /* FirebaseStorage */; };
 		B1729C7A297444F800B9F45C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B1729C79297444F800B9F45C /* FirebaseStorageCombine-Community */; };
+		B1A1B384297516C200021BA5 /* plantsData.json in Resources */ = {isa = PBXBuildFile; fileRef = B1A1B383297516C200021BA5 /* plantsData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		B1729C3B2974407E00B9F45C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B1729C3D2974409300B9F45C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B1729C422974444600B9F45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1A1B383297516C200021BA5 /* plantsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plantsData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		B1729C2929743DEE00B9F45C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B1A1B383297516C200021BA5 /* plantsData.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				B1729C1729743CB800B9F45C /* art.scnassets in Resources */,
 				B1729C2129743CB900B9F45C /* LaunchScreen.storyboard in Resources */,
 				B1729C432974444600B9F45C /* GoogleService-Info.plist in Resources */,
+				B1A1B384297516C200021BA5 /* plantsData.json in Resources */,
 				0B9109342974770200430340 /* SnapshotProductCell.xib in Resources */,
 				B1729C1E29743CB900B9F45C /* Assets.xcassets in Resources */,
 				B1729C1C29743CB800B9F45C /* Main.storyboard in Resources */,

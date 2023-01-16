@@ -77,14 +77,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4A0-XI-VcO">
-                                <rect key="frame" x="96" y="105" width="200" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4A0-XI-VcO">
+                                <rect key="frame" x="96.666666666666686" y="103" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Olq-Tn-CxF"/>
+                                    <constraint firstAttribute="height" constant="200" id="cRI-tA-bP5"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="47x-pH-2kp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4A0-XI-VcO" firstAttribute="top" secondItem="47x-pH-2kp" secondAttribute="top" constant="44" id="KQk-9L-G0k"/>
+                            <constraint firstItem="4A0-XI-VcO" firstAttribute="centerX" secondItem="rlv-lB-UV1" secondAttribute="centerX" id="aTK-fV-t16"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="profile" id="1VK-Pb-7fJ"/>
