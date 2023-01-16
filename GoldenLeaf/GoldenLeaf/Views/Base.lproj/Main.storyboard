@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -229,16 +230,154 @@
             </objects>
             <point key="canvasLocation" x="5587" y="-664"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="7fu-gT-GzW">
             <objects>
-                <viewController id="3OE-ZN-wTT" sceneMemberID="viewController">
+                <viewController id="3OE-ZN-wTT" customClass="PaymentViewController" customModule="GoldenLeaf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3IF-II-vZZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="amI-lf-JNh">
+                                <rect key="frame" x="20" y="79" width="353" height="719"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yoi-yH-M8y">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="359.66666666666669"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VRb-Og-IqN">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="120"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5I-KZ-79j">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="120"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                        <color key="textColor" red="0.29157505709999998" green="0.70630401860000003" blue="0.37183941250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cxt-Ix-DN2">
+                                                <rect key="frame" x="0.0" y="120" width="353" height="119.66666666666669"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBq-a6-ozd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="119.66666666666667"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="INV-Ml-Tyd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="119.66666666666667"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xmv-hP-V9a">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="119.66666666666667"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNL-dn-gYH">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="119.66666666666667"/>
+                                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-9T-izb">
+                                                                        <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="119.66666666666667"/>
+                                                                        <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yZY-Zb-zUt">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="176.33333333333334" height="119.66666666666667"/>
+                                                                                <menu key="menu" id="BCC-hN-acA">
+                                                                                    <children>
+                                                                                        <command title="Item 1" id="YMP-66-lQZ"/>
+                                                                                        <command title="Item 2" id="XeY-rh-8mZ"/>
+                                                                                    </children>
+                                                                                </menu>
+                                                                                <state key="normal" title="Button"/>
+                                                                            </button>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eXP-10-Xb9">
+                                                <rect key="frame" x="0.0" y="239.66666666666669" width="353" height="120"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q0F-D1-3iG">
+                                        <rect key="frame" x="0.0" y="359.66666666666674" width="353" height="359.33333333333326"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AjZ-lI-JxG">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="71.666666666666671"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="URk-9h-5Mb">
+                                                <rect key="frame" x="0.0" y="71.666666666666629" width="353" height="72"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XTb-lx-KDm">
+                                                <rect key="frame" x="0.0" y="143.66666666666669" width="353" height="72"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kmu-lZ-seA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="72"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-2w-C92">
+                                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="72"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3y-fE-uEI">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="72"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rLh-xA-ecE">
+                                                                <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="72"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 SAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBw-Mv-v0l">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="176.33333333333334" height="72"/>
+                                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v3P-Dm-kcp">
+                                                <rect key="frame" x="0.0" y="215.66666666666669" width="353" height="71.666666666666686"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5rF-Kp-jCP">
+                                                <rect key="frame" x="0.0" y="287.33333333333331" width="353" height="72"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNk-XP-qEx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="72"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Pay">
+                                                            <color key="baseBackgroundColor" red="0.4334102936" green="0.70630401860000003" blue="0.61361271029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="payButtonPressed:" destination="3OE-ZN-wTT" eventType="touchUpInside" id="sSA-I3-HXj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="h1N-EO-mJA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="amI-lf-JNh" firstAttribute="leading" secondItem="h1N-EO-mJA" secondAttribute="leading" constant="20" id="0Kj-b2-e2y"/>
+                            <constraint firstItem="h1N-EO-mJA" firstAttribute="bottom" secondItem="amI-lf-JNh" secondAttribute="bottom" constant="20" id="ZLQ-aC-JZY"/>
+                            <constraint firstItem="amI-lf-JNh" firstAttribute="top" secondItem="h1N-EO-mJA" secondAttribute="top" constant="20" id="ZZx-qq-AHl"/>
+                            <constraint firstItem="h1N-EO-mJA" firstAttribute="trailing" secondItem="amI-lf-JNh" secondAttribute="trailing" constant="20" id="zf9-Ze-64f"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickPaymentMethod" destination="BCC-hN-acA" id="bbU-8o-feh"/>
+                        <outlet property="totalPriceLabel" destination="XBw-Mv-v0l" id="Bn4-2V-Mzz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ya9-ww-j1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
