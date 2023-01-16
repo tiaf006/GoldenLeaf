@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0B9109342974770200430340 /* SnapshotProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9109332974770100430340 /* SnapshotProductCell.xib */; };
 		0B9109362974771B00430340 /* SnapshotProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9109352974771B00430340 /* SnapshotProductCell.swift */; };
-		4F64C56A297469D1001DED0A /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */; };
 		4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */; };
+		4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58C29755A2C001DED0A /* plantStruct.swift */; };
+		4F64C58F29755AC2001DED0A /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58E29755AC2001DED0A /* PlantCell.swift */; };
+		4F64C59229755B81001DED0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C59129755B81001DED0A /* Kingfisher */; };
 		87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D91A9E297483320075C184 /* ListOrdersViewController.swift */; };
 		B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1429743CB800B9F45C /* AppDelegate.swift */; };
 		B1729C1729743CB800B9F45C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1729C1629743CB800B9F45C /* art.scnassets */; };
@@ -61,8 +63,9 @@
 /* Begin PBXFileReference section */
 		0B9109332974770100430340 /* SnapshotProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnapshotProductCell.xib; sourceTree = "<group>"; };
 		0B9109352974771B00430340 /* SnapshotProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotProductCell.swift; sourceTree = "<group>"; };
-		4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
+		4F64C58C29755A2C001DED0A /* plantStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantStruct.swift; sourceTree = "<group>"; };
+		4F64C58E29755AC2001DED0A /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
 		87D91A9E297483320075C184 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		B1729C1129743CB800B9F45C /* GoldenLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1729C1429743CB800B9F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 				B1729C68297444F800B9F45C /* FirebaseInAppMessaging-Beta in Frameworks */,
 				B1729C5A297444F800B9F45C /* FirebaseDatabaseSwift in Frameworks */,
 				B1729C64297444F800B9F45C /* FirebaseFunctions in Frameworks */,
+				4F64C59229755B81001DED0A /* Kingfisher in Frameworks */,
 				B1729C7A297444F800B9F45C /* FirebaseStorageCombine-Community in Frameworks */,
 				B1729C74297444F800B9F45C /* FirebaseRemoteConfig in Frameworks */,
 				B1729C50297444F800B9F45C /* FirebaseAppDistribution-Beta in Frameworks */,
@@ -122,6 +126,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F64C58B297559C5001DED0A /* PlantMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B1729C3329743FD400B9F45C /* PlantsCollictionViewController.swift */,
+				4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */,
+				4F64C58C29755A2C001DED0A /* plantStruct.swift */,
+				4F64C58E29755AC2001DED0A /* PlantCell.swift */,
+			);
+			path = PlantMenu;
+			sourceTree = "<group>";
+		};
 		87D91A9D2974830A0075C184 /* ListOrders */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,9 +189,7 @@
 				B1729C3F2974409B00B9F45C /* Login-Register */,
 				B1729C1829743CB800B9F45C /* ViewController.swift */,
 				B1729C2D29743F6A00B9F45C /* OnBoardingViewController.swift */,
-				B1729C3329743FD400B9F45C /* PlantsCollictionViewController.swift */,
-				4F64C569297469D1001DED0A /* PlantCollectionViewCell.swift */,
-				4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */,
+				4F64C58B297559C5001DED0A /* PlantMenu */,
 				B1729C3529743FE800B9F45C /* CartViewController.swift */,
 				0B9109352974771B00430340 /* SnapshotProductCell.swift */,
 				B1729C372974400E00B9F45C /* PrevOrdersTableViewController.swift */,
@@ -267,6 +280,7 @@
 				B1729C75297444F800B9F45C /* FirebaseRemoteConfigSwift */,
 				B1729C77297444F800B9F45C /* FirebaseStorage */,
 				B1729C79297444F800B9F45C /* FirebaseStorageCombine-Community */,
+				4F64C59129755B81001DED0A /* Kingfisher */,
 			);
 			productName = GoldenLeaf;
 			productReference = B1729C1129743CB800B9F45C /* GoldenLeaf.app */;
@@ -298,6 +312,7 @@
 			mainGroup = B1729C0829743CB700B9F45C;
 			packageReferences = (
 				B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4F64C59029755B81001DED0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B1729C1229743CB800B9F45C /* Products */;
 			projectDirPath = "";
@@ -330,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */,
 				B1729C3429743FD400B9F45C /* PlantsCollictionViewController.swift in Sources */,
 				B1729C382974400E00B9F45C /* PrevOrdersTableViewController.swift in Sources */,
 				B1729C3C2974407E00B9F45C /* ProfileViewController.swift in Sources */,
@@ -338,10 +354,10 @@
 				0B9109362974771B00430340 /* SnapshotProductCell.swift in Sources */,
 				B1729C3E2974409300B9F45C /* LocationViewController.swift in Sources */,
 				B1729C3229743F8900B9F45C /* RegisterViewController.swift in Sources */,
+				4F64C58F29755AC2001DED0A /* PlantCell.swift in Sources */,
 				B1729C2E29743F6A00B9F45C /* OnBoardingViewController.swift in Sources */,
 				B1729C1929743CB800B9F45C /* ViewController.swift in Sources */,
 				B1729C3A2974402A00B9F45C /* PaymentViewController.swift in Sources */,
-				4F64C56A297469D1001DED0A /* PlantCollectionViewCell.swift in Sources */,
 				87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */,
 				4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */,
 				B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */,
@@ -568,6 +584,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4F64C59029755B81001DED0A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -579,6 +603,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4F64C59129755B81001DED0A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F64C59029755B81001DED0A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		B1729C45297444F800B9F45C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
