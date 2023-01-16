@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03021B922975C14000BE13C4 /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03021B912975C14000BE13C4 /* RegularExpression.swift */; };
+		03021B952975C2A900BE13C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 03021B942975C2A900BE13C4 /* Kingfisher */; };
+		03021B982975C49800BE13C4 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 03021B972975C49800BE13C4 /* GoogleSignIn */; };
+		03021B9A2975C49900BE13C4 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 03021B992975C49900BE13C4 /* GoogleSignInSwift */; };
 		0B9109342974770200430340 /* SnapshotProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9109332974770100430340 /* SnapshotProductCell.xib */; };
 		0B9109362974771B00430340 /* SnapshotProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9109352974771B00430340 /* SnapshotProductCell.swift */; };
 		4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */; };
 		4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58C29755A2C001DED0A /* plantStruct.swift */; };
 		4F64C58F29755AC2001DED0A /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58E29755AC2001DED0A /* PlantCell.swift */; };
-		4F64C59229755B81001DED0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C59129755B81001DED0A /* Kingfisher */; };
 		87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D91A9E297483320075C184 /* ListOrdersViewController.swift */; };
 		B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1429743CB800B9F45C /* AppDelegate.swift */; };
 		B1729C1729743CB800B9F45C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1729C1629743CB800B9F45C /* art.scnassets */; };
@@ -61,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03021B912975C14000BE13C4 /* RegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
+		03021B9B2975C67000BE13C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0B9109332974770100430340 /* SnapshotProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnapshotProductCell.xib; sourceTree = "<group>"; };
 		0B9109352974771B00430340 /* SnapshotProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotProductCell.swift; sourceTree = "<group>"; };
 		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
@@ -101,14 +106,16 @@
 				B1729C6E297444F800B9F45C /* FirebaseMLModelDownloader in Frameworks */,
 				B1729C62297444F800B9F45C /* FirebaseFirestoreSwift in Frameworks */,
 				B1729C4E297444F800B9F45C /* FirebaseAppCheck in Frameworks */,
+				03021B982975C49800BE13C4 /* GoogleSignIn in Frameworks */,
 				B1729C4C297444F800B9F45C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				B1729C52297444F800B9F45C /* FirebaseAuth in Frameworks */,
 				B1729C56297444F800B9F45C /* FirebaseCrashlytics in Frameworks */,
 				B1729C76297444F800B9F45C /* FirebaseRemoteConfigSwift in Frameworks */,
 				B1729C68297444F800B9F45C /* FirebaseInAppMessaging-Beta in Frameworks */,
+				03021B9A2975C49900BE13C4 /* GoogleSignInSwift in Frameworks */,
 				B1729C5A297444F800B9F45C /* FirebaseDatabaseSwift in Frameworks */,
 				B1729C64297444F800B9F45C /* FirebaseFunctions in Frameworks */,
-				4F64C59229755B81001DED0A /* Kingfisher in Frameworks */,
+				03021B952975C2A900BE13C4 /* Kingfisher in Frameworks */,
 				B1729C7A297444F800B9F45C /* FirebaseStorageCombine-Community in Frameworks */,
 				B1729C74297444F800B9F45C /* FirebaseRemoteConfig in Frameworks */,
 				B1729C50297444F800B9F45C /* FirebaseAppDistribution-Beta in Frameworks */,
@@ -164,6 +171,7 @@
 		B1729C1329743CB800B9F45C /* GoldenLeaf */ = {
 			isa = PBXGroup;
 			children = (
+				03021B9B2975C67000BE13C4 /* Info.plist */,
 				B1729C422974444600B9F45C /* GoogleService-Info.plist */,
 				B1729C2C29743EB400B9F45C /* 3DModels */,
 				B1729C2A29743E8100B9F45C /* Views */,
@@ -232,6 +240,7 @@
 				87D91A9D2974830A0075C184 /* ListOrders */,
 				B1729C2F29743F7A00B9F45C /* LogInViewController.swift */,
 				B1729C3129743F8900B9F45C /* RegisterViewController.swift */,
+				03021B912975C14000BE13C4 /* RegularExpression.swift */,
 			);
 			path = "Login-Register";
 			sourceTree = "<group>";
@@ -280,7 +289,9 @@
 				B1729C75297444F800B9F45C /* FirebaseRemoteConfigSwift */,
 				B1729C77297444F800B9F45C /* FirebaseStorage */,
 				B1729C79297444F800B9F45C /* FirebaseStorageCombine-Community */,
-				4F64C59129755B81001DED0A /* Kingfisher */,
+				03021B942975C2A900BE13C4 /* Kingfisher */,
+				03021B972975C49800BE13C4 /* GoogleSignIn */,
+				03021B992975C49900BE13C4 /* GoogleSignInSwift */,
 			);
 			productName = GoldenLeaf;
 			productReference = B1729C1129743CB800B9F45C /* GoldenLeaf.app */;
@@ -312,7 +323,8 @@
 			mainGroup = B1729C0829743CB700B9F45C;
 			packageReferences = (
 				B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				4F64C59029755B81001DED0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				03021B932975C2A900BE13C4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				03021B962975C49800BE13C4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = B1729C1229743CB800B9F45C /* Products */;
 			projectDirPath = "";
@@ -358,6 +370,7 @@
 				B1729C2E29743F6A00B9F45C /* OnBoardingViewController.swift in Sources */,
 				B1729C1929743CB800B9F45C /* ViewController.swift in Sources */,
 				B1729C3A2974402A00B9F45C /* PaymentViewController.swift in Sources */,
+				03021B922975C14000BE13C4 /* RegularExpression.swift in Sources */,
 				87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */,
 				4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */,
 				B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */,
@@ -509,6 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4N2CH77674;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoldenLeaf/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -517,6 +531,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +554,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4N2CH77674;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoldenLeaf/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -547,6 +563,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,12 +601,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4F64C59029755B81001DED0A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		03021B932975C2A900BE13C4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				branch = master;
+				kind = branch;
+			};
+		};
+		03021B962975C49800BE13C4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
 			};
 		};
 		B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
@@ -603,10 +628,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4F64C59129755B81001DED0A /* Kingfisher */ = {
+		03021B942975C2A900BE13C4 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4F64C59029755B81001DED0A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 03021B932975C2A900BE13C4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		03021B972975C49800BE13C4 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03021B962975C49800BE13C4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		03021B992975C49900BE13C4 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03021B962975C49800BE13C4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 		B1729C45297444F800B9F45C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
