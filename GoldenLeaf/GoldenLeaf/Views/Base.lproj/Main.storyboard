@@ -273,6 +273,40 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pPw-UR-RIT">
                                                 <rect key="frame" x="0.0" y="96" width="333" height="47.666666666666657"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOY-Mn-Bov">
+                                                        <rect key="frame" x="0.0" y="0.0" width="333" height="47.666666666666664"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r86-lL-0Gd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="333" height="47.666666666666664"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U5E-Iq-eZW">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="47.666666666666664"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; time" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-xS-2GT">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="47.666666666666664"/>
+                                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aaf-hO-FPY">
+                                                                        <rect key="frame" x="166.66666666666663" y="0.0" width="166.33333333333337" height="47.666666666666664"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 - 00/00/2XXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgK-cy-Etn">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="166.33333333333334" height="47.666666666666664"/>
+                                                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                                                                <color key="textColor" red="0.4334102936" green="0.70630401860000003" blue="0.61361271029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cxt-Ix-DN2">
                                                 <rect key="frame" x="0.0" y="143.66666666666666" width="333" height="48"/>
@@ -523,6 +557,7 @@
                         <outlet property="cardExpiryDate" destination="3M4-Ow-XmB" id="El3-Dk-O5b"/>
                         <outlet property="cardHolderName" destination="HN2-HN-R3s" id="R93-XL-atE"/>
                         <outlet property="cardNumber" destination="KZr-PD-GOQ" id="0cE-JV-Ec5"/>
+                        <outlet property="dateTimeLabel" destination="kgK-cy-Etn" id="moK-Qj-CA1"/>
                         <outlet property="pickPaymentMethod" destination="BCC-hN-acA" id="bbU-8o-feh"/>
                         <outlet property="totalPriceLabel" destination="XBw-Mv-v0l" id="52r-zG-Nqg"/>
                     </connections>

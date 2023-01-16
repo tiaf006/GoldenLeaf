@@ -14,6 +14,7 @@ class PaymentViewController: UIViewController {
     
     var ref: DatabaseReference!
     //MARK: Outlets 🔌
+    @IBOutlet weak var dateTimeLabel: UILabel!
     //MARK: Total price
     @IBOutlet weak var totalPriceLabel: UILabel!
     //MARK: Card info
@@ -24,11 +25,11 @@ class PaymentViewController: UIViewController {
     //MARK: payment options
     override func viewDidLoad() {
         super.viewDidLoad()
-        setPopUpButton()
-        FirebaseApp.configure()
-        //storing card info data
-        ref = Database.database().reference().child("Cards");
-        
+        orderTimeAndDate()
+                setPopUpButton()
+                FirebaseApp.configure()
+                //storing card info data
+                ref = Database.database().reference().child("Cards");
     }
     //MARK: Action Pick payment method 💳
     
@@ -57,6 +58,7 @@ class PaymentViewController: UIViewController {
         let key = ref.childByAutoId().key
         let cards = [
             "id": key,
+            "order date & time": dateTimeLabel.text! as String,
             "card holder name": cardHolderName.text! as String,
             "card number": cardNumber.text! as String,
             "card expiry date": cardExpiryDate.text! as String,
@@ -72,4 +74,12 @@ class PaymentViewController: UIViewController {
         }))
         present(alert, animated: true, completion: nil)
     }
+    
+    //MARK: Date and time of order ⏰
+       func orderTimeAndDate() {
+           let currentTime = Date()
+           let formatter = DateFormatter()
+           let dateTimeString = formatter.string(from: currentTime)
+           dateTimeLabel.text = dateTimeString
+       }
 }
