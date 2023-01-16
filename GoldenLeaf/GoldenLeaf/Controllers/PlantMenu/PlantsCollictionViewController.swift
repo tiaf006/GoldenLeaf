@@ -28,9 +28,19 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
             } catch {
                 print(error)
             }
+      
     }
     
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "shoPlant"{
+//           let indexpath = sender as! NSIndexPath
+//
+//            let infoplant = segue.destination as! PlantDetailsViewController
+//            infoplant.loadView()
+//            infoplant.getplant(PlantArray[indexpath.row])
+//            infoplant.setplant()
+//        }
+//    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         PlantArray.count
@@ -42,13 +52,16 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
         let strURL = URL(string:PlantArray[indexPath.row].img!)
         cell.planti.kf.setImage(with: strURL)
         cell.price.text = "\(PlantArray[indexPath.row].heightAtPurchase!.m!)$"
-
+        cell.backgroundColor = #colorLiteral(red: 0.3288042247, green: 0.7145963907, blue: 0.6151889563, alpha: 1)
         return cell
     }
     
     
     
-    
+    @objc func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedCell : PlantCell = PlantsColliction.cellForItem(at: indexPath)! as! PlantCell
+        performSegue(withIdentifier: "shoPlant", sender: indexPath)
+    }
    
 
 
