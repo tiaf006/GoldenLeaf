@@ -10,13 +10,10 @@ import FirebaseStorage
 
 class LogInViewController: UIViewController {
     
-    
     //IBOutlet
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logInButton: UIButton!
-    //    @IBOutlet weak var gmailButton: GIDSignInButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +26,13 @@ class LogInViewController: UIViewController {
         
     }
     
+    //    @IBAction func forgetPasswordAction(_ sender: Any) {
+    //        // Show ForgetPasswordViewController
+    //        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    //        let forgetPasswordVC = storyBoard.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
+    //        forgetPasswordVC.modalPresentationStyle = .fullScreen
+    //        navigationController?.pushViewController(forgetPasswordVC, animated: true)
+    //    }
     
     @IBAction func logInAction(_ sender: Any) {
         guard
@@ -42,24 +46,13 @@ class LogInViewController: UIViewController {
             return
         }
         
-        if !emailTextField.isEmail(){
-            // Check if email is not match email format will show error message
-            let alertController = UIAlertController(title: "Error", message: "Please enter correct email", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Ok", style: .cancel)
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true)
-            return
-        }
-        
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             if let error = error{
-                // Check if password is wrong will show error message, else will get the user online
+                // Check if there any error will show error message, else will get the user online
                 let alertController = UIAlertController(title: "Error", message: "\(error.localizedDescription)", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Ok", style: .cancel)
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true)
-                //                print("\(error.localizedDescription)")
-                //                return
             }else{
                 
                 let plantsCollictionVC = self.storyboard?.instantiateViewController(withIdentifier: "PlantsCollictionViewController") as! PlantsCollictionViewController
@@ -70,20 +63,21 @@ class LogInViewController: UIViewController {
     } // End logInAction
     
     
+    //Sign in by gmail account
     @IBAction func gmailAction(_ sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else {return}
-        
         let config = GIDConfiguration(clientID: clientID)
-        
-        
         GIDSignIn.sharedInstance.configuration = config
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult , error in
             if error != nil {
+                // Check if there any error will show error message
                 let alertController = UIAlertController(title: "Error", message: "\(error!.localizedDescription)", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Ok", style: .cancel)
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true)
-            }
+            }// End if
+            
+            // Get the information from account
             let firstName = signInResult?.user.profile!.givenName!
             let lastName = signInResult?.user.profile!.familyName!
             let email = signInResult?.user.profile!.email
@@ -95,23 +89,26 @@ class LogInViewController: UIViewController {
             
             Auth.auth().signIn(with: credential) { authResult, error in
                 if error != nil {
+                    // Check if there any error will show error message
                     let alertController = UIAlertController(title: "Error", message: "\(error!.localizedDescription)", preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "Ok", style: .cancel)
                     alertController.addAction(okAction)
                     self.present(alertController, animated: true)
-                }
+                }// End if
                 
-                        if let  imageURL = URL(string: "\(image!)") {
-                            URLSession.shared.dataTask(with: imageURL) { data, response, error in
-                                DispatchQueue.main.async {
-                                    let path = "images/\(authResult!.user.uid).jpg"
-                                    let storageReference : StorageReference!
-                                    storageReference = Storage.storage().reference().child(path)
-                                    storageReference.putData(data!)
-                                }
-                            }.resume()
+                //Save profile image into storage
+                if let  imageURL = URL(string: "\(image!)") {
+                    URLSession.shared.dataTask(with: imageURL) { data, response, error in
+                        DispatchQueue.main.async {
+                            let path = "images/\(authResult!.user.uid).jpg"
+                            let storageReference : StorageReference!
+                            storageReference = Storage.storage().reference().child(path)
+                            storageReference.putData(data!)
                         }
+                    }.resume()
+                } // End if
                 
+                // Save the account into firebase
                 let reference = Database.database().reference(fromURL: "https://golden-leaf-5afdf-default-rtdb.firebaseio.com").child("User").child("\(authResult!.user.uid)")
                 let values = ["first name" : firstName,
                               "last name" : lastName,
@@ -124,12 +121,9 @@ class LogInViewController: UIViewController {
                 let plantsCollictionVC = storyBoard.instantiateViewController(withIdentifier: "PlantsCollictionViewController") as! PlantsCollictionViewController
                 plantsCollictionVC.modalPresentationStyle = .fullScreen
                 self.present(plantsCollictionVC, animated: true)
-//                plantsCollictionVC.navigationItem.hidesBackButton = true
                 
             }
-            
         }
-        
-        
-    }
-}
+    } // End gmailAction
+    
+} // End LogInViewController class

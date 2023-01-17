@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController {
         presentPhotoActionSheet()
     }
     
-    
+    // SignUp button action
     @IBAction func signUpAction(_ sender: Any) {
         guard
             // Check if any requairment information is empty will show error message
@@ -55,15 +55,6 @@ class RegisterViewController: UIViewController {
             let password = passwordTextField.text, !password.isEmpty,
             let rePassword = rePasswordTextField.text, !rePassword.isEmpty else {
             let alertController = UIAlertController(title: "Error", message: "Please fill all the information", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "Ok", style: .cancel)
-            alertController.addAction(okAction)
-            self.present(alertController, animated: true)
-            return
-        }
-        
-        // Check if email is not match email format will show error message
-        if !emailTextField.isEmail(){
-            let alertController = UIAlertController(title: "Error", message: "Please enter correct email", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .cancel)
             alertController.addAction(okAction)
             self.present(alertController, animated: true)
@@ -91,7 +82,7 @@ class RegisterViewController: UIViewController {
         
         Auth.auth().createUser(withEmail: email, password: password, completion: {(authResult, error: Error?) in
             if error != nil {
-                // Check if email is already register will show error message, else will create account
+                // Check if any error through email will show error message, else will create account
                 let alertController = UIAlertController(title: "Error", message: "\(error!.localizedDescription)", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "Ok", style: .cancel)
                 alertController.addAction(okAction)
@@ -106,8 +97,6 @@ class RegisterViewController: UIViewController {
                 
                 reference.setValue(values)
                 
-                
-                
                 // Show LogInViewController
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
                 let logInVC = storyBoard.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
@@ -118,7 +107,8 @@ class RegisterViewController: UIViewController {
         })
     } // End signUpAction
     
-}
+} // End RegisterViewController class
+
 
 //MARK: extention for the emage picker
 extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -131,31 +121,34 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
         actionSheet.addAction(UIAlertAction(title: "Take Photo",
                                             style: .default,
                                             handler: { [weak self]  _ in
-            self?.presentCamera()
+            
+            // Check if device support camera else will show alert message
+            if UIImagePickerController.isSourceTypeAvailable(.camera){
+                let vc = UIImagePickerController()
+                vc.sourceType = .camera
+                vc.allowsEditing = true
+                vc.delegate = self
+                self!.present(vc, animated: true)
+            }else{
+                let alertController = UIAlertController(title: "Error", message: "Camera not avaliable", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "Ok", style: .cancel)
+                alertController.addAction(okAction)
+                self!.present(alertController, animated: true)
+                return
+            }
         }))
         actionSheet.addAction(UIAlertAction(title: "Chose Photo ",
                                             style: .default,
                                             handler: { [weak self] _ in
-            self?.presentPhotoPicker()
+            // Open photo library
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.delegate = self
+            imagePicker.allowsEditing = true
+            self!.present(imagePicker, animated: true)
         }))
         
         present(actionSheet, animated: true)
-    }
-    
-    func presentCamera() {
-        let vc = UIImagePickerController()
-        vc.sourceType = .camera
-        vc.allowsEditing = true
-        vc.delegate = self
-        present(vc, animated: true)
-    }
-    
-    func presentPhotoPicker() {
-        let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .photoLibrary
-        imagePicker.delegate = self
-        imagePicker.allowsEditing = true
-        present(imagePicker, animated: true)
     }
     
     //MARK: - Image picker methods
@@ -187,5 +180,5 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
         picker.dismiss(animated: true, completion: nil)
     }
-}
+} // End extension
 
