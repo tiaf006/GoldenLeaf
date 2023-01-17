@@ -15,14 +15,9 @@ class PlantDetailsViewController: UIViewController {
     @IBOutlet weak var plantname: UILabel!
     @IBOutlet weak var detailes: UILabel!
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-     
-
     }
    
     
