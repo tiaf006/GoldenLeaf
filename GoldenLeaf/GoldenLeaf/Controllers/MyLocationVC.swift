@@ -75,6 +75,9 @@ class MyLocationVC: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
+        case .notDetermined:            // first time to open the app
+            locationMangager.requestAlwaysAuthorization()
+            break
         case .authorizedWhenInUse:          // give the access ontime of use the app
             locationMangager.requestAlwaysAuthorization()
             locationMangager.startUpdatingLocation()
@@ -97,6 +100,10 @@ class MyLocationVC: UIViewController, CLLocationManagerDelegate {
     func showAlert(msg: String){
         let alert = UIAlertController(title: "Alert", message: msg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "close", style: .default))
+        present(alert,animated: true,completion: nil)
+        alert.addAction(UIAlertAction(title: "setting", style: .default, handler: { actio in
+            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+        }))
         present(alert,animated: true,completion: nil)
     }
 
