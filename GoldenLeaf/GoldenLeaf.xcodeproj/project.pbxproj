@@ -16,6 +16,11 @@
 		4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */; };
 		4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58C29755A2C001DED0A /* plantStruct.swift */; };
 		4F64C58F29755AC2001DED0A /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58E29755AC2001DED0A /* PlantCell.swift */; };
+		4F64C5A42976EEEC001DED0A /* MyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C5A32976EEEC001DED0A /* MyLocationVC.swift */; };
+		4F64C5A72976FC0A001DED0A /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5A62976FC0A001DED0A /* FacebookCore */; };
+		4F64C5A92976FC0A001DED0A /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5A82976FC0A001DED0A /* FacebookGamingServices */; };
+		4F64C5AB2976FC0A001DED0A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5AA2976FC0A001DED0A /* FacebookLogin */; };
+		4F64C5AD2976FC0A001DED0A /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5AC2976FC0A001DED0A /* FacebookShare */; };
 		87D91A9F297483320075C184 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D91A9E297483320075C184 /* ListOrdersViewController.swift */; };
 		B1729C1529743CB800B9F45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1729C1429743CB800B9F45C /* AppDelegate.swift */; };
 		B1729C1729743CB800B9F45C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = B1729C1629743CB800B9F45C /* art.scnassets */; };
@@ -70,6 +75,7 @@
 		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
 		4F64C58C29755A2C001DED0A /* plantStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantStruct.swift; sourceTree = "<group>"; };
 		4F64C58E29755AC2001DED0A /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		4F64C5A32976EEEC001DED0A /* MyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationVC.swift; sourceTree = "<group>"; };
 		87D91A9E297483320075C184 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		B1729C1129743CB800B9F45C /* GoldenLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1729C1429743CB800B9F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,10 +108,13 @@
 				B1729C5E297444F800B9F45C /* FirebaseFirestore in Frameworks */,
 				B1729C4A297444F800B9F45C /* FirebaseAnalyticsSwift in Frameworks */,
 				B1729C46297444F800B9F45C /* FirebaseAnalytics in Frameworks */,
+				4F64C5AB2976FC0A001DED0A /* FacebookLogin in Frameworks */,
 				B1729C48297444F800B9F45C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				B1729C6E297444F800B9F45C /* FirebaseMLModelDownloader in Frameworks */,
+				4F64C5A92976FC0A001DED0A /* FacebookGamingServices in Frameworks */,
 				B1729C62297444F800B9F45C /* FirebaseFirestoreSwift in Frameworks */,
 				B1729C4E297444F800B9F45C /* FirebaseAppCheck in Frameworks */,
+				4F64C5A72976FC0A001DED0A /* FacebookCore in Frameworks */,
 				03021B982975C49800BE13C4 /* GoogleSignIn in Frameworks */,
 				B1729C4C297444F800B9F45C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				B1729C52297444F800B9F45C /* FirebaseAuth in Frameworks */,
@@ -122,6 +131,7 @@
 				B1729C54297444F800B9F45C /* FirebaseAuthCombine-Community in Frameworks */,
 				B1729C72297444F800B9F45C /* FirebasePerformance in Frameworks */,
 				B1729C6A297444F800B9F45C /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				4F64C5AD2976FC0A001DED0A /* FacebookShare in Frameworks */,
 				B1729C78297444F800B9F45C /* FirebaseStorage in Frameworks */,
 				B1729C5C297444F800B9F45C /* FirebaseDynamicLinks in Frameworks */,
 				B1729C60297444F800B9F45C /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -213,6 +223,7 @@
 				B1729C392974402A00B9F45C /* PaymentViewController.swift */,
 				B1729C3B2974407E00B9F45C /* ProfileViewController.swift */,
 				B1729C3D2974409300B9F45C /* LocationViewController.swift */,
+				4F64C5A32976EEEC001DED0A /* MyLocationVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,6 +311,10 @@
 				03021B942975C2A900BE13C4 /* Kingfisher */,
 				03021B972975C49800BE13C4 /* GoogleSignIn */,
 				03021B992975C49900BE13C4 /* GoogleSignInSwift */,
+				4F64C5A62976FC0A001DED0A /* FacebookCore */,
+				4F64C5A82976FC0A001DED0A /* FacebookGamingServices */,
+				4F64C5AA2976FC0A001DED0A /* FacebookLogin */,
+				4F64C5AC2976FC0A001DED0A /* FacebookShare */,
 			);
 			productName = GoldenLeaf;
 			productReference = B1729C1129743CB800B9F45C /* GoldenLeaf.app */;
@@ -333,6 +348,7 @@
 				B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				03021B932975C2A900BE13C4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				03021B962975C49800BE13C4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				4F64C5A52976FC0A001DED0A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = B1729C1229743CB800B9F45C /* Products */;
 			projectDirPath = "";
@@ -366,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */,
+				4F64C5A42976EEEC001DED0A /* MyLocationVC.swift in Sources */,
 				B1729C3429743FD400B9F45C /* PlantsCollictionViewController.swift in Sources */,
 				B1729C382974400E00B9F45C /* PrevOrdersTableViewController.swift in Sources */,
 				B1729C3C2974407E00B9F45C /* ProfileViewController.swift in Sources */,
@@ -531,7 +548,9 @@
 				DEVELOPMENT_TEAM = 4N2CH77674;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoldenLeaf/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to select a photo for your profile ";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please allow access to your location always";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access to your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -563,7 +582,9 @@
 				DEVELOPMENT_TEAM = 4N2CH77674;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoldenLeaf/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to select a photo for your profile ";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Please allow access to your location always";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow access to your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -625,6 +646,14 @@
 				kind = branch;
 			};
 		};
+		4F64C5A52976FC0A001DED0A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		B1729C44297444F800B9F45C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -650,6 +679,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 03021B962975C49800BE13C4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		4F64C5A62976FC0A001DED0A /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F64C5A52976FC0A001DED0A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		4F64C5A82976FC0A001DED0A /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F64C5A52976FC0A001DED0A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		4F64C5AA2976FC0A001DED0A /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F64C5A52976FC0A001DED0A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		4F64C5AC2976FC0A001DED0A /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F64C5A52976FC0A001DED0A /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
 		};
 		B1729C45297444F800B9F45C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;

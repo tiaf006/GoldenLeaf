@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Please allow access to select a photo for your profile </string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -14,6 +12,10 @@
 				<string>com.googleusercontent.apps.698312702335-86n4s9trl51rnbju0plflibudnio383v</string>
 			</array>
 		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
 	</array>
 </dict>
 </plist>
