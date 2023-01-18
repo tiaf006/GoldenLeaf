@@ -27,7 +27,7 @@ class PaymentViewController: UIViewController {
         super.viewDidLoad()
         orderTimeAndDate()
                 setPopUpButton()
-                FirebaseApp.configure()
+               
                 //storing card info data
                 ref = Database.database().reference().child("Cards");
     }
@@ -39,11 +39,11 @@ class PaymentViewController: UIViewController {
     func setPopUpButton() {
         let optionClosure = {(action: UIAction) in print(action.title)}
         //set option titles
-        pickPaymentMethod.menu = UIMenu(children: [
+        pickPaymentMethod?.menu = UIMenu(children: [
             UIAction(title: "Card", state: .on, handler: optionClosure), UIAction(title: "Mada", handler: optionClosure), UIAction(title: "Apple Pay", handler: optionClosure)])
         
-        pickPaymentMethod.showsMenuAsPrimaryAction = true
-        pickPaymentMethod.changesSelectionAsPrimaryAction = true
+        pickPaymentMethod?.showsMenuAsPrimaryAction = true
+        pickPaymentMethod?.changesSelectionAsPrimaryAction = true
     }
     
     
@@ -71,6 +71,8 @@ class PaymentViewController: UIViewController {
         let alert = UIAlertController(title: "Succesful Payment 🌱", message: "Your payment was successful and your order is on its way 🛵", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok 🍃", style: .default, handler: { action in
             print("Ok button is pressed 🍃")
+            
+            self.passData()
         }))
         present(alert, animated: true, completion: nil)
     }
@@ -82,4 +84,11 @@ class PaymentViewController: UIViewController {
            let dateTimeString = formatter.string(from: currentTime)
            dateTimeLabel.text = dateTimeString
        }
+    
+    //Passing data to tableview of previous orders 🛼
+        func passData() {
+            let listTablePage = storyboard?.instantiateViewController(withIdentifier: "ListOrdersViewController") as! ListOrdersViewController
+            
+            present(listTablePage, animated: true, completion: nil)
+        }
 }
