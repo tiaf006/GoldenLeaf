@@ -23,9 +23,9 @@ class ProductTableViewCell: UITableViewCell {
     
     
     //MARK: - var
-    var PlantArray : [PlantElement] = []
+    var plantItem : PlantElement?
     static let identifier = "ProductTableViewCell"
-    //var delegate: CartItemDelegate?
+    var delegate: CartItemDelegate?
     var quantity: Int = 1
     
 
@@ -40,17 +40,23 @@ class ProductTableViewCell: UITableViewCell {
         }
         
         decrementButton.isEnabled = quantity > 0
-        decrementButton.backgroundColor = !decrementButton.isEnabled ? .gray : .black
         
         self.quantityLabel.text = String(describing: quantity)
-     //   self.delegate?.updateCartItem(cell: self, quantity: quantity)
+        
+        self.delegate?.updateCartItem(cell: self, quantity: quantity)
     }
     
     
-    //MARK: - Action
-//    func setup(){
-//        plantImageView.kf.setImage(with: strURL)
-//        plantNameLabel.text = PlantArray[indexPath.row].latinName
-//        priceLabel.text = "\(PlantArray[indexPath.row].heightAtPurchase!.cm!)$"
-//    }
+//    //MARK: - Action
+    func setup(){
+        if let plantImage = plantItem?.img {
+            let imageURL = URL(string: plantImage)
+            plantImageView.kf.setImage(with: imageURL)
+        }
+        plantNameLabel.text = plantItem?.latinName
+        priceLabel.text = "\(plantItem?.heightAtPurchase!.cm!)$"
+    }
 }
+
+
+

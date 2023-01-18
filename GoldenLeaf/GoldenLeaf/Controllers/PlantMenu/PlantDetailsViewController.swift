@@ -18,6 +18,9 @@ class PlantDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if plant != nil {
+            setplant()
+        }
     }
    
     
@@ -26,6 +29,13 @@ class PlantDetailsViewController: UIViewController {
     }
     
     @IBAction func AddToCart(_ sender: Any) {
+        if let plant = plant {
+            Cart.shared.items.append(plant)
+        }
+        self.dismiss(animated: true) {
+            
+        }
+        
     }
     
     
@@ -34,8 +44,9 @@ class PlantDetailsViewController: UIViewController {
     }
     
     func setplant(){
-//        var imgs = URL(string: plant!.img!)!
-//        self.plantimg.kf.setImage(with: img)
+        let img = URL(string: plant!.img!)!
+        
+        self.plantimg.kf.setImage(with: img)
         self.plantname.text = "Name: \(plant!.latinName!)"
         self.detailes.text = "\(plant!.lightTolered!)"
         
