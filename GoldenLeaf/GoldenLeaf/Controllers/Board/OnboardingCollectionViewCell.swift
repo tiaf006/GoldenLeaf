@@ -20,6 +20,6 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     func setup(_ slide: OnboardingSlide) {
         slideImageView.image = slide.image
         slideTitle.text = slide.title
-        slideDes.text = slide.title
+        slideDes.text = slide.description
     }
 }
