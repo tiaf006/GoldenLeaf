@@ -19,8 +19,8 @@ class CartViewController: UIViewController {
     
     
     //MARK: - var
-    var PlantArray : [PlantElement] = []
-   // var cart: Cart? = nil
+//    var PlantArray : [PlantElement] = []
+    var cart: Cart? = nil
     
     
     //MARK: - lifeCycle
@@ -32,11 +32,15 @@ class CartViewController: UIViewController {
         registerCells()
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        totalLabel.text = "\(Cart.shared.total)"
+        tableView.reloadData()
+    }
     
     //MARK: - func register
     private func registerCells() {
-        tableView.register(UINib(nibName: ProductTableViewCell.identifier, bundle: nil), forHeaderFooterViewReuseIdentifier: ProductTableViewCell.identifier)
+        
+        tableView.register(UINib.init(nibName: ProductTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ProductTableViewCell.identifier)
     }
 
     
@@ -48,13 +52,15 @@ class CartViewController: UIViewController {
 
 extension CartViewController: UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return Cart.shared.items.count
         //PlantArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.identifier) as! ProductTableViewCell
-      //  cell.setup(name:name[indexpath.row])
+        cell.plantItem = Cart.shared.items[indexPath.row]
+        cell.setup()
+        
             return cell
     }
     
@@ -77,17 +83,38 @@ extension CartViewController: UITableViewDelegate , UITableViewDataSource {
  
     
 }
-//extension CartViewController: CartItemDelegate {
-//    // MARK: - CartItemDelegate
-//    func updateCartItem(cell: ProductTableViewCell, quantity: Int) {
-//        guard let indexPath = tableView.indexPath(for: cell) else { return }
-//        guard let cartItem = cart?.items[indexPath.row] else { return }
-//
-//        //Update cart item quantity
+extension CartViewController: CartItemDelegate {
+
+    
+    // MARK: - CartItemDelegate
+    func updateCartItem(cell: ProductTableViewCell, quantity: Int) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+//        guard let cartItem = Cart.shared.items[indexPath.row] else { return }
+        let cartItem = Cart.shared.items[indexPath.row]
+        //Update cart item quantity
 //        cartItem.quantity = quantity
-//
-//        //Update displayed cart total
-//        guard let total = cart?.total else { return }
+
+        //Update displayed cart total
+//        guard let total = Cart.shared.total else { return }
+        let total = Cart.shared.total
+        print("Cart", indexPath, cartItem, total)
 //        totalLabel.text = currencyHelper.display(total: total)
-//    }
-//}
+    }
+}
+
+protocol CartItemDelegate {
+    func updateCartItem(cell: ProductTableViewCell, quantity: Int)
+}
+
+class Cart {
+    static var shared: Cart = Cart.init()
+    var items: [PlantElement] = []
+    var total : Double {
+        var price: Double = 0
+        let _ = items.map { plant in
+            price += Double(plant.heightAtPurchase?.cm ?? 0)
+            return
+        }
+        return price 
+    }
+}
