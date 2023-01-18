@@ -21,7 +21,7 @@ class LogInViewController: UIViewController {
         //LogIn button style
         logInButton.layer.cornerRadius = logInButton.frame.height / 2
         logInButton.layer.borderWidth = 2
-        logInButton.backgroundColor = .systemBlue
+        //logInButton.backgroundColor = .systemBlue
         logInButton.layer.borderColor = UIColor.white.cgColor
         
     }
