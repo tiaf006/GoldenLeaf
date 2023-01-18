@@ -382,11 +382,11 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="166.33333333333334" height="48"/>
                                                                                 <menu key="menu" id="BCC-hN-acA">
                                                                                     <children>
-                                                                                        <command title="Item 1" id="YMP-66-lQZ"/>
+                                                                                        <command title="Card" id="YMP-66-lQZ"/>
                                                                                         <command title="Item 2" id="XeY-rh-8mZ"/>
                                                                                     </children>
                                                                                 </menu>
-                                                                                <state key="normal" title="Button">
+                                                                                <state key="normal" title="Card">
                                                                                     <color key="titleColor" red="0.4334102936" green="0.70630401860000003" blue="0.61361271029999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                 </state>
                                                                             </button>
@@ -692,7 +692,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="aQo-dO-1Dv" id="tlo-rp-ZQ0"/>
+                        <outlet property="tableView" destination="aQo-dO-1Dv" id="Qqm-Je-I6f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZc-F5-y4l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -718,7 +718,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-YZ-5Vb">
-                                <rect key="frame" x="167.66666666666666" y="106" width="57.666666666666657" height="20.333333333333329"/>
+                                <rect key="frame" x="167.66666666666666" y="105.66666666666667" width="57.666666666666657" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
