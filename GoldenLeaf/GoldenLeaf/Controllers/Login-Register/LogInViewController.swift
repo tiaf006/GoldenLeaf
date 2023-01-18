@@ -26,13 +26,6 @@ class LogInViewController: UIViewController {
         
     }
     
-    //    @IBAction func forgetPasswordAction(_ sender: Any) {
-    //        // Show ForgetPasswordViewController
-    //        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-    //        let forgetPasswordVC = storyBoard.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
-    //        forgetPasswordVC.modalPresentationStyle = .fullScreen
-    //        navigationController?.pushViewController(forgetPasswordVC, animated: true)
-    //    }
     
     @IBAction func logInAction(_ sender: Any) {
         guard

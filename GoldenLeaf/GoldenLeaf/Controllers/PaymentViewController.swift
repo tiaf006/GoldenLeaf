@@ -12,7 +12,7 @@ import FirebaseDatabase
 
 class PaymentViewController: UIViewController {
     
-    var ref: DatabaseReference!
+   
     //MARK: Outlets 🔌
     @IBOutlet weak var dateTimeLabel: UILabel!
     //MARK: Total price
@@ -28,8 +28,7 @@ class PaymentViewController: UIViewController {
         orderTimeAndDate()
                 setPopUpButton()
                
-                //storing card info data
-                ref = Database.database().reference().child("Cards");
+                
     }
     //MARK: Action Pick payment method 💳
     
@@ -55,16 +54,16 @@ class PaymentViewController: UIViewController {
     
     //MARK: save card info
     func saveCardInformation() {
-        let key = ref.childByAutoId().key
+        let reference = Database.database().reference(fromURL: "https://golden-leaf-5afdf-default-rtdb.firebaseio.com").child("User").child("\(Auth.auth().currentUser!.uid)").child("Cart")
         let cards = [
-            "id": key,
+           
             "order date & time": dateTimeLabel.text! as String,
             "card holder name": cardHolderName.text! as String,
             "card number": cardNumber.text! as String,
             "card expiry date": cardExpiryDate.text! as String,
             "card cvv": cardCVV.text! as String
         ]
-        ref.child(key!).setValue(cards)
+        reference.setValue(cards)
     }
     //MARK: alert ‼️
     func showAlert() {

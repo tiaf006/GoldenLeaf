@@ -53,11 +53,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         let geoCoder = CLGeocoder()
         geoCoder.reverseGeocodeLocation(location) { places, errorr in
             guard let places = places?.first, errorr == nil else {return}
-            let reference = Database.database().reference(fromURL: "https://golden-leaf-5afdf-default-rtdb.firebaseio.com").child("User").child("\(Auth.auth().currentUser!.uid)")
+            let reference = Database.database().reference(fromURL: "https://golden-leaf-5afdf-default-rtdb.firebaseio.com").child("User").child("\(Auth.auth().currentUser!.uid)").child("Location")
                         let values = [
-            //                "first name" : Auth.auth().currentUser?.lastName,
-            //                          "last name" : Auth.auth().currentUser?.firstName,
-                                      "email" : Auth.auth().currentUser?.email,
                                       "place name" : places.name,
                                       "place country" : places.country,
                                       "place country code" : places.isoCountryCode ,
@@ -65,17 +62,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
                                       "place Locality": places.locality ,
                                       "place PostalCode": places.postalCode]
                         
-                        reference.setValue(values)
+            reference.setValue(values)
             
-            print("----------------")
-            print("place name \(places.name ?? "no name to display")")
-            print("place country \(places.country ?? "no country to display")")
-            print("place country code  \(places.isoCountryCode ?? "no country code to display")")
-            print("place administrativeArea  \(places.administrativeArea ?? "no administrativeArea to display")")
-            print("place Locality \(places.locality ?? "no Locality to display")")
-            print("place PostalCode \(places.postalCode ?? "no PostalCode to display")")
-
         }
+    
     }
     
     func setStartingLocation(location: CLLocation, distance: CLLocationDistance){
