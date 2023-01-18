@@ -8,6 +8,8 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Firebase
+import FirebaseAuth
 
 class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
@@ -44,11 +46,26 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         }
        
     }
+    
+
     func getLocationInfo(location: CLLocation){
         prevLocation = location
         let geoCoder = CLGeocoder()
         geoCoder.reverseGeocodeLocation(location) { places, errorr in
             guard let places = places?.first, errorr == nil else {return}
+            let reference = Database.database().reference(fromURL: "https://golden-leaf-5afdf-default-rtdb.firebaseio.com").child("User").child("\(Auth.auth().currentUser!.uid)")
+                        let values = [
+            //                "first name" : Auth.auth().currentUser?.lastName,
+            //                          "last name" : Auth.auth().currentUser?.firstName,
+                                      "email" : Auth.auth().currentUser?.email,
+                                      "place name" : places.name,
+                                      "place country" : places.country,
+                                      "place country code" : places.isoCountryCode ,
+                                      "place administrativeArea": places.administrativeArea ,
+                                      "place Locality": places.locality ,
+                                      "place PostalCode": places.postalCode]
+                        
+                        reference.setValue(values)
             
             print("----------------")
             print("place name \(places.name ?? "no name to display")")
@@ -146,5 +163,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate, MKMap
         present(alert,animated: true,completion: nil)
     }
 
+    @IBAction func doneButton(_ sender: Any) {
+    }
     
 }
