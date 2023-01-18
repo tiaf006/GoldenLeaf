@@ -16,7 +16,6 @@
 		4F64C56C29746D7F001DED0A /* PlantDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */; };
 		4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58C29755A2C001DED0A /* plantStruct.swift */; };
 		4F64C58F29755AC2001DED0A /* PlantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C58E29755AC2001DED0A /* PlantCell.swift */; };
-		4F64C5A42976EEEC001DED0A /* MyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F64C5A32976EEEC001DED0A /* MyLocationVC.swift */; };
 		4F64C5A72976FC0A001DED0A /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5A62976FC0A001DED0A /* FacebookCore */; };
 		4F64C5A92976FC0A001DED0A /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5A82976FC0A001DED0A /* FacebookGamingServices */; };
 		4F64C5AB2976FC0A001DED0A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5AA2976FC0A001DED0A /* FacebookLogin */; };
@@ -75,7 +74,6 @@
 		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
 		4F64C58C29755A2C001DED0A /* plantStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantStruct.swift; sourceTree = "<group>"; };
 		4F64C58E29755AC2001DED0A /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
-		4F64C5A32976EEEC001DED0A /* MyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationVC.swift; sourceTree = "<group>"; };
 		87D91A9E297483320075C184 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		B1729C1129743CB800B9F45C /* GoldenLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1729C1429743CB800B9F45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -223,7 +221,6 @@
 				B1729C392974402A00B9F45C /* PaymentViewController.swift */,
 				B1729C3B2974407E00B9F45C /* ProfileViewController.swift */,
 				B1729C3D2974409300B9F45C /* LocationViewController.swift */,
-				4F64C5A32976EEEC001DED0A /* MyLocationVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -382,7 +379,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F64C58D29755A2C001DED0A /* plantStruct.swift in Sources */,
-				4F64C5A42976EEEC001DED0A /* MyLocationVC.swift in Sources */,
 				B1729C3429743FD400B9F45C /* PlantsCollictionViewController.swift in Sources */,
 				B1729C382974400E00B9F45C /* PrevOrdersTableViewController.swift in Sources */,
 				B1729C3C2974407E00B9F45C /* ProfileViewController.swift in Sources */,
