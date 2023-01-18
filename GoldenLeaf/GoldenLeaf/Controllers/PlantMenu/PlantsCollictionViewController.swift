@@ -11,7 +11,7 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
    
 
     var PlantArray : [PlantElement] = []
-    
+    var userSelectPlant: PlantElement?
     @IBOutlet weak var PlantsColliction: UICollectionView!
     
     override func viewDidLoad() {
@@ -19,11 +19,11 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
         PlantsColliction.delegate = self
         PlantsColliction.dataSource = self
         do {
-                if let bundlePath = Bundle.main.path(forResource: "",ofType: "json"),
+                if let bundlePath = Bundle.main.path(forResource: "plantsData",ofType: "json"),
                     let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
                     let decodedData = try JSONDecoder().decode([PlantElement].self,from: jsonData)
                     self.PlantArray = decodedData
-                    print([PlantArray])
+                    //print(PlantArray)
                 }
             } catch {
                 print(error)
@@ -31,16 +31,7 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
       
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "shoPlant"{
-//           let indexpath = sender as! NSIndexPath
-//
-//            let infoplant = segue.destination as! PlantDetailsViewController
-//            infoplant.loadView()
-//            infoplant.getplant(PlantArray[indexpath.row])
-//            infoplant.setplant()
-//        }
-//    }
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         PlantArray.count
@@ -51,7 +42,7 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
         cell.plantName.text = PlantArray[indexPath.row].latinName
         let strURL = URL(string:PlantArray[indexPath.row].img!)
         cell.planti.kf.setImage(with: strURL)
-        cell.price.text = "\(PlantArray[indexPath.row].heightAtPurchase!.m!)$"
+        cell.price.text = "\(PlantArray[indexPath.row].heightAtPurchase!.cm!)$"
         cell.backgroundColor = #colorLiteral(red: 0.3288042247, green: 0.7145963907, blue: 0.6151889563, alpha: 1)
         return cell
     }
@@ -60,10 +51,20 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
     
     @objc func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell : PlantCell = PlantsColliction.cellForItem(at: indexPath)! as! PlantCell
+        // Save user selection
+        self.userSelectPlant = PlantArray[indexPath.row]
         performSegue(withIdentifier: "shoPlant", sender: indexPath)
     }
    
 
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "shoPlant"{
+               let indexpath = sender as! NSIndexPath
+    
+                let infoplant = segue.destination as! PlantDetailsViewController
+                infoplant.plant = userSelectPlant
+            }
+        }
 
 
 }
