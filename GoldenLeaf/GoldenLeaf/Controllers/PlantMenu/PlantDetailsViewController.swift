@@ -47,6 +47,7 @@ class PlantDetailsViewController: UIViewController {
         let img = URL(string: plant!.img!)!
         
         self.plantimg.kf.setImage(with: img)
+        self.plantimg.Rouned200()
         self.plantname.text = "Name: \(plant!.latinName!)"
         self.detailes.text = "Detailes :- \n  🌱 Plant prefume : \(plant!.perfume ?? nil) \n  🌱 Color of the blooms:\(plant!.colorOfBlooms ?? nil) \n 🌱 Color of the leaf :\(plant!.colorOfLeaf!) \n 🌱 Watering: \(plant!.watering!) \n "
         

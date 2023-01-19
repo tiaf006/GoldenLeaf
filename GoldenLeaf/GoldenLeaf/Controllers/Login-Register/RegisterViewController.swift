@@ -26,10 +26,9 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         
         //Signup button style
-        signUpButton.layer.cornerRadius = signUpButton.frame.height / 2
-        signUpButton.layer.borderWidth = 2
-        signUpButton.backgroundColor = .systemBlue
-        signUpButton.layer.borderColor = UIColor.white.cgColor
+       // signUpButton.layer.cornerRadius = signUpButton.frame.height / 2
+        //signUpButton.layer.borderWidth = 2
+       // signUpButton.layer.borderColor = UIColor.white.cgColor
         
         //ImagePicker
         userImage.layer.cornerRadius = 150.0/2.0
@@ -98,11 +97,11 @@ class RegisterViewController: UIViewController {
                 reference.setValue(values)
                 
                 // Show LogInViewController
-                let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let logInVC = storyBoard.instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
-                logInVC.modalPresentationStyle = .fullScreen
-                self.navigationController?.pushViewController(logInVC, animated: true)
-                logInVC.navigationItem.hidesBackButton = true
+                print("\n \n !!!!!!!!!!!! \n \n ")
+                let plantsCollictionVC = self.storyboard?.instantiateViewController(withIdentifier: "tabBar")
+                plantsCollictionVC?.modalPresentationStyle = .fullScreen
+                self.present(plantsCollictionVC!, animated: true)
+                
             }
         })
     } // End signUpAction
@@ -174,7 +173,7 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
         
         let path = "images/\(uid).jpg"
         let fileRef = storageRef.child(path)
-        
+        fileRef.putData(imageData)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController){

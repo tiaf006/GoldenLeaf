@@ -43,8 +43,13 @@ class CartViewController: UIViewController {
         tableView.register(UINib.init(nibName: ProductTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: ProductTableViewCell.identifier)
     }
 
-    
-
+    //MARK: - Action
+        @IBAction func checkoutButton(_ sender: Any) {
+            let controller = storyboard?.instantiateViewController(identifier: "PaymentViewController") as! PaymentViewController
+            controller.loadView()
+            controller.totalPriceLabel.text = amountLabel.text
+            present(controller, animated: true, completion: nil)
+        }
 }// end class
 
 
@@ -112,7 +117,7 @@ class Cart {
     var total : Double {
         var price: Double = 0
         let _ = items.map { plant in
-            price += Double(plant.heightAtPurchase?.cm ?? 0)
+            price += Double((plant.heightAtPurchase!.cm)!)
             return
         }
         return price 

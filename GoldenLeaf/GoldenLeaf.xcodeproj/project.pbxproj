@@ -20,6 +20,7 @@
 		4F64C5A92976FC0A001DED0A /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5A82976FC0A001DED0A /* FacebookGamingServices */; };
 		4F64C5AB2976FC0A001DED0A /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5AA2976FC0A001DED0A /* FacebookLogin */; };
 		4F64C5AD2976FC0A001DED0A /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 4F64C5AC2976FC0A001DED0A /* FacebookShare */; };
+		4FC27B9B2978C663002223C3 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC27B9A2978C663002223C3 /* extentions.swift */; };
 		8710C59F2978354E00D7A246 /* ListOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8710C59E2978354E00D7A246 /* ListOrderTableViewCell.swift */; };
 		872016FE29785A110050B8B9 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872016FD29785A110050B8B9 /* UIViewEx.swift */; };
 		8720170029785B6D0050B8B9 /* OnboaringSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872016FF29785B6D0050B8B9 /* OnboaringSlide.swift */; };
@@ -78,6 +79,7 @@
 		4F64C56B29746D7F001DED0A /* PlantDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsViewController.swift; sourceTree = "<group>"; };
 		4F64C58C29755A2C001DED0A /* plantStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plantStruct.swift; sourceTree = "<group>"; };
 		4F64C58E29755AC2001DED0A /* PlantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCell.swift; sourceTree = "<group>"; };
+		4FC27B9A2978C663002223C3 /* extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
 		8710C59E2978354E00D7A246 /* ListOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOrderTableViewCell.swift; sourceTree = "<group>"; };
 		872016FD29785A110050B8B9 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		872016FF29785B6D0050B8B9 /* OnboaringSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboaringSlide.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				B1A1B383297516C200021BA5 /* plantsData.json */,
 				872016FD29785A110050B8B9 /* UIViewEx.swift */,
 				872016FF29785B6D0050B8B9 /* OnboaringSlide.swift */,
+				4FC27B9A2978C663002223C3 /* extentions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				87201702297860000050B8B9 /* OnboardingCollectionViewCell.swift in Sources */,
 				B1729C3029743F7A00B9F45C /* LogInViewController.swift in Sources */,
 				B1729C3629743FE800B9F45C /* CartViewController.swift in Sources */,
+				4FC27B9B2978C663002223C3 /* extentions.swift in Sources */,
 				0B9109362974771B00430340 /* ProductTableViewCell.swift in Sources */,
 				B1729C3E2974409300B9F45C /* LocationViewController.swift in Sources */,
 				B1729C3229743F8900B9F45C /* RegisterViewController.swift in Sources */,

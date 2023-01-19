@@ -39,11 +39,14 @@ class PlantsCollictionViewController: UIViewController, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "plantCell", for: indexPath) as! PlantCell
+        cell.cornerRadius = 12
         cell.plantName.text = PlantArray[indexPath.row].latinName
         let strURL = URL(string:PlantArray[indexPath.row].img!)
+        cell.planti.Rouned()
         cell.planti.kf.setImage(with: strURL)
         cell.price.text = "\(PlantArray[indexPath.row].heightAtPurchase!.cm!)$"
-        cell.backgroundColor = #colorLiteral(red: 0.3288042247, green: 0.7145963907, blue: 0.6151889563, alpha: 1)
+        cell.backgroundColor = #colorLiteral(red: 0.3288042247, green: 0.7145963907, blue: 0.6151889563, alpha: 0.3)
+       
         return cell
     }
     

@@ -21,7 +21,6 @@ class LogInViewController: UIViewController {
         //LogIn button style
         logInButton.layer.cornerRadius = logInButton.frame.height / 2
         logInButton.layer.borderWidth = 2
-        logInButton.backgroundColor = .systemBlue
         logInButton.layer.borderColor = UIColor.white.cgColor
         
     }
@@ -48,8 +47,9 @@ class LogInViewController: UIViewController {
                 self.present(alertController, animated: true)
             }else{
                 
-                let plantsCollictionVC = self.storyboard?.instantiateViewController(withIdentifier: "PlantsCollictionViewController") as! PlantsCollictionViewController
-                self.present(plantsCollictionVC, animated: true)
+                let plantsCollictionVC = self.storyboard?.instantiateViewController(withIdentifier: "tabBar")
+                plantsCollictionVC?.modalPresentationStyle = .fullScreen
+                self.present(plantsCollictionVC!, animated: true)
                 
             } // End else
         }
@@ -111,7 +111,7 @@ class LogInViewController: UIViewController {
                 
                 // Show PlantsCollictionViewController
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let plantsCollictionVC = storyBoard.instantiateViewController(withIdentifier: "PlantsCollictionViewController") as! PlantsCollictionViewController
+                let plantsCollictionVC = storyBoard.instantiateViewController(withIdentifier: "tabBar")
                 plantsCollictionVC.modalPresentationStyle = .fullScreen
                 self.present(plantsCollictionVC, animated: true)
                 
