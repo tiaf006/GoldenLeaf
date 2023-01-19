@@ -43,7 +43,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GPu-Wf-Ww5">
                         <rect key="frame" x="233.33333333333334" y="33" width="117.66666666666666" height="34"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjL-rj-Wyc" userLabel="Decrement Button">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjL-rj-Wyc" userLabel="Decrement Button">
                                 <rect key="frame" x="0.0" y="0.0" width="47" height="34"/>
                                 <color key="tintColor" red="0.59496426579999995" green="0.69425684210000005" blue="0.57037585970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
