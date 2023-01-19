@@ -1058,7 +1058,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="cart" catalog="system" id="rZ6-Ec-aj1"/>
                     <connections>
-                        <outlet property="amountLabel" destination="Esa-XJ-RC5" id="XAO-0i-chP"/>
                         <outlet property="checkoutButton" destination="vJ8-we-6mp" id="xLO-cd-2NF"/>
                         <outlet property="checkoutContainer" destination="e84-73-YY8" id="E6v-xR-wA0"/>
                         <outlet property="tableView" destination="t81-rh-NBS" id="WcQ-mE-div"/>

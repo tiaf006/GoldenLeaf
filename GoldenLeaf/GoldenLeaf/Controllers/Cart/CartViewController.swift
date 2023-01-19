@@ -22,7 +22,6 @@ class CartViewController: UIViewController {
 //    var PlantArray : [PlantElement] = []
     var cart: Cart? = nil
     
-    
     //MARK: - lifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +62,7 @@ extension CartViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProductTableViewCell.identifier) as! ProductTableViewCell
+    
         cell.plantItem = Cart.shared.items[indexPath.row]
         cell.setup()
         
@@ -88,7 +88,7 @@ extension CartViewController: UITableViewDelegate , UITableViewDataSource {
  
     
 }
-extension CartViewController: CartItemDelegate {
+extension CartViewController {
 
     
     // MARK: - CartItemDelegate
@@ -111,7 +111,11 @@ protocol CartItemDelegate {
     func updateCartItem(cell: ProductTableViewCell, quantity: Int)
 }
 
-class Cart {
+class Cart : CartItemDelegate {
+    func updateCartItem(cell: ProductTableViewCell, quantity: Int) {
+        print("Cart updates", cell, quantity)
+    }
+    
     static var shared: Cart = Cart.init()
     var items: [PlantElement] = []
     var total : Double {
@@ -122,4 +126,57 @@ class Cart {
         }
         return price 
     }
+    
+    
+    //    var total: Float {
+    //        get { return items.reduce(0.0) { value, item in
+    //            value + item.subTotal
+    //            }
+    //        }
+    //    }
+        
+    //    var totalQuantity : Int {
+    //        get { return items.reduce(0) { value, item in
+    //            value + item.quantity
+    //            }
+    //        }
+    //    }
+        
+    //
+    //    func updateCart(with product: Product) {
+    //        if !self.contains(product: product) {
+    //            self.add(product: product)
+    //        } else {
+    //            self.remove(product: product)
+    //        }
+    //    }
+    //
+    //    func updateCart() {
+    //
+    //        for item in self.items {
+    //            if item.quantity == 0 {
+    //                updateCart(with: item.product)
+    //            }
+    //        }
+    //    }
+    //
+    //    func add() {
+    //        let item = items.filter { $0.product == product }
+    //
+    //        if item.first != nil {
+    //            item.first!.quantity += 1
+    //        } else {
+    //            items.append(CartItem(product: product))
+    //        }
+    //    }
+    //
+    //    func remove() {
+    //        guard let index = items.index(where: { $0.product == product }) else { return}
+    //        items.remove(at: index)
+    //    }
+    //
+    //    func contains(product: Product) -> Bool {
+    //        let item = items.filter { $0.product == product }
+    //        return item.first != nil
+    //    }
 }

@@ -42,7 +42,7 @@ class ProductTableViewCell: UITableViewCell {
         decrementButton.isEnabled = quantity > 0
         
         self.quantityLabel.text = String(describing: quantity)
-        
+        self.delegate = Cart.shared
         self.delegate?.updateCartItem(cell: self, quantity: quantity)
     }
     
